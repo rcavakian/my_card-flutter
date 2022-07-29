@@ -17,28 +17,20 @@ class MeuApp extends StatelessWidget {
         backgroundColor: Colors.pinkAccent,
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                height: 100,
-                width: 100,
-                color: Colors.amber,
-                child: const Text('Container 1'),
+              const CircleAvatar(
+                // backgroundColor: Color.fromARGB(255, 57, 220, 144),
+                radius: 50,
+                backgroundImage: AssetImage('assets/images/rickAvatar.jpg'),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                height: 100,
-                width: 100,
-                color: Color.fromARGB(255, 255, 106, 7),
-                child: const Text('Container 2'),
-              ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                height: 100,
-                width: 100,
-                color: Color.fromARGB(255, 255, 7, 7),
-                child: const Text('Container 3'),
+              Text(
+                'Rick Avakian',
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
