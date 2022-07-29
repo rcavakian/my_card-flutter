@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,12 +26,24 @@ class MeuApp extends StatelessWidget {
                 radius: 50,
                 backgroundImage: AssetImage('assets/images/rickAvatar.jpg'),
               ),
+              // ignore: prefer_const_constructors
               Text(
                 'Rick Avakian',
                 style: TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
+                  fontFamily: 'FiraCode',
+                ),
+              ),
+              Text(
+                'ESTUDANTE DE ADS',
+                style: TextStyle(
+                  fontFamily: 'SourceSansPro',
+                  color: Colors.pinkAccent.shade100,
+                  fontSize: 20,
+                  letterSpacing: 2.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
